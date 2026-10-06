@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Notes | Travel Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">Wander<span>Notes</span></a>
+      <button class="menu-button" id="menuButton" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#blog">Blog</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#tips">Travel Tips</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">A JOURNAL FOR CURIOUS TRAVELLERS</p>
+        <h1>Collect moments,<br>not just miles.</h1>
+        <p>Stories, guides and little discoveries from the road.</p>
+        <a class="button" href="#blog">Read the blog</a>
+      </div>
+    </section>
+
+    <section class="section" id="blog">
+      <div class="section-heading">
+        <p class="eyebrow">THE LATEST STORIES</p>
+        <h2>From the travel journal</h2>
+        <p>Ideas and inspiration for your next adventure.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=85" alt="Beach in Goa">
+          <div class="post-content">
+            <span class="category">BEACH ESCAPE · 5 MIN READ</span>
+            <h3>A peaceful weekend in Goa</h3>
+            <p>Golden sand, colourful streets and sunsets by the sea. Here is a simple plan for a relaxing Goa trip.</p>
+            <button class="read-more" data-title="A peaceful weekend in Goa" data-body="Start your morning with a quiet beach walk. Explore local markets in the afternoon, try regional food, and finish the day watching the sunset. Keep your schedule flexible so you can enjoy unexpected discoveries.">Read story →</button>
+          </div>
+        </article>
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=85" alt="Himalayan mountains">
+          <div class="post-content">
+            <span class="category">MOUNTAIN LIFE · 4 MIN READ</span>
+            <h3>Finding calm in the mountains</h3>
+            <p>Fresh air, beautiful valleys and slow mornings make a mountain escape feel special.</p>
+            <button class="read-more" data-title="Finding calm in the mountains" data-body="Choose comfortable shoes and carry layers because mountain weather can change. Spend time on a local walking trail, respect nature, and leave no litter behind. A slower itinerary often makes the best memories.">Read story →</button>
+          </div>
+        </article>
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=85" alt="Kerala backwaters">
+          <div class="post-content">
+            <span class="category">SLOW TRAVEL · 6 MIN READ</span>
+            <h3>Slow days in Kerala</h3>
+            <p>Discover green landscapes, peaceful backwaters and the joy of travelling without a rush.</p>
+            <button class="read-more" data-title="Slow days in Kerala" data-body="Plan time for the backwaters, local food and short walks through green surroundings. Ask local residents for recommendations, choose responsible tour operators, and take your time enjoying the scenery.">Read story →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="destinations section" id="destinations">
+      <div class="section-heading">
+        <p class="eyebrow">WHERE TO NEXT?</p>
+        <h2>Explore destinations</h2>
+      </div>
+      <div class="destination-list">
+        <a href="#blog">Goa <span>Beaches & sunsets ↗</span></a>
+        <a href="#blog">Manali <span>Mountains & adventure ↗</span></a>
+        <a href="#blog">Kerala <span>Backwaters & greenery ↗</span></a>
+        <a href="#blog">Jaipur <span>Heritage & culture ↗</span></a>
+      </div>
+    </section>
+
+    <section class="section tips" id="tips">
+      <div class="section-heading">
+        <p class="eyebrow">TRAVEL SMART</p>
+        <h2>Little tips, big difference</h2>
+      </div>
+      <div class="tips-grid">
+        <div><span>01</span><h3>Plan a budget</h3><p>Estimate transport, stay, food and activities before you go.</p></div>
+        <div><span>02</span><h3>Pack light</h3><p>Bring versatile clothes and keep essentials easy to reach.</p></div>
+        <div><span>03</span><h3>Respect local life</h3><p>Learn local customs and ask before photographing people.</p></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-copy">
+        <p class="eyebrow">HELLO, TRAVELLER</p>
+        <h2>Every place has a story.</h2>
+        <p>Wander Notes is a sample travel blog created to share destination ideas, practical tips and memorable travel stories. Replace this text with your own introduction for your project.</p>
+      </div>
+      <div class="about-art" aria-label="Travel illustration">✈️<span>Take the scenic route</span></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Send a message</h2>
+        <p>Have a travel question or story idea? Write a note below.</p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+        <button class="button" type="submit">Send message</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#home">Wander<span>Notes</span></a>
+    <p>© 2026 Wander Notes · A student travel blog project</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <dialog id="storyDialog" class="story-dialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Close story">×</button>
+    <p class="eyebrow">TRAVEL JOURNAL</p>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogBody"></p>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
